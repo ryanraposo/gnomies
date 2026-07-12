@@ -59,6 +59,10 @@ This will result in Hermes cloning the repo and creating a skill for visual capa
 > **Example:** *"I need to check the build status in VSCode."*
 > → Call `capture.py "VSCode"` → Analyze result.
 
+## Screenshot
+
+![Gnomies Screenshot](image.png)
+
 ## License
 
 MIT
