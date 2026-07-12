@@ -38,13 +38,17 @@ The script will:
 
 ## Hermes Skill Prompt
 
-Add this to your Hermes agent configuration to enable visual capabilities:
+**Say this to Hermes:**
+
+> "Clone https://github.com/ryanraposo/gnomies to a sensible location and create a skill for the screenshot capture utility."
+
+This will result in Hermes cloning the repo and creating a skill for visual capabilities:
 
 > **Skill:** Screenshot_Tool
 >
 > **Purpose:** Use this tool when you need to visually analyze an active window to extract information, debug, or verify status.
 >
-> **Mechanism:** This tool executes `python3 ~/repos/gnomies/capture.py [KEYWORD]`.
+> **Mechanism:** This tool executes `python3 <cloned-repo-path>/capture.py [KEYWORD]`.
 >
 > **Behavior:**
 > 1. Identify the application or window title relevant to the current task.

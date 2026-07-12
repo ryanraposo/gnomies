@@ -5,7 +5,8 @@ import time
 import os
 
 # Predictable location for your ecosystem
-OUTPUT_DIR = "/tmp/hermes_output"
+# Can be overridden with HERMES_OUTPUT_DIR environment variable
+OUTPUT_DIR = os.environ.get("HERMES_OUTPUT_DIR", "/tmp/hermes_output")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def get_active_windows():
